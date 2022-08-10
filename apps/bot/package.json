@@ -13,6 +13,8 @@
   "packageManager": "yarn@3.2.2",
   "devDependencies": {
     "@types/node": "^18.6.5",
+    "@types/qrcode": "^1.4.2",
+    "@types/rimraf": "^3.0.2",
     "@typescript-eslint/eslint-plugin": "^5.33.0",
     "@typescript-eslint/parser": "^5.33.0",
     "@xipa7-bot/config": "*",
@@ -24,6 +26,10 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "@adiwajshing/baileys": "^4.3.0"
+    "@adiwajshing/baileys": "^4.3.0",
+    "qrcode": "^1.5.1"
+  },
+  "optionalDependencies": {
+    "pino-pretty": "^8.1.0"
   }
 }

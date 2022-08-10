@@ -1,6 +1,7 @@
 import makeWASocket, { AuthenticationState } from '@adiwajshing/baileys';
+import pino from 'pino';
 
-type ReturnedMakeWaSocket = ReturnType<typeof makeWASocket>;
+export type ReturnedMakeWaSocket = ReturnType<typeof makeWASocket>;
 
 /**
  * Create bot instance.
@@ -13,4 +14,14 @@ export const createBot = async (
   makeWASocket({
     'auth': state,
     'connectTimeoutMs': 10_000,
+    'logger': pino({
+      'name': 'XIPA7_BOT',
+      'transport': {
+        'target': 'pino-pretty',
+        'options': {
+          'colorize': true,
+          'ignore': 'hostname',
+        },
+      },
+    }),
   });
