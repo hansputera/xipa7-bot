@@ -1,5 +1,5 @@
 module.exports = {
-  ...require("./eslintrc.json"),
-  "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
+  ...require('./eslintrc.json'),
+  'parser': '@typescript-eslint/parser',
+  'plugins': ['@typescript-eslint'],
 };

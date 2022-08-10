@@ -1,1 +1,1 @@
-module.exports = require("@xipa7-bot/config/prettierrc.json");
+module.exports = require('@xipa7-bot/config/prettierrc.json');

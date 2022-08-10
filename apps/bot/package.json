@@ -3,7 +3,7 @@
   "description": "Main X IPA 7 Bot Source Code",
   "version": "1.0.0",
   "scripts": {
-    "lint": "eslint \"**/*.{js,ts,d.ts}\" --fix",
+    "lint": "eslint \"src/**/*.{js,ts,d.ts}\" --fix",
     "format": "prettier . --write",
     "clean": "rimraf dist",
     "build": "tsc -p tsconfig.json",

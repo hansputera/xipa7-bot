@@ -7,5 +7,6 @@
   "semi": true,
   "endOfLine": "auto",
   "quoteProps": "preserve",
-  "trailingComma": "all"
+  "trailingComma": "all",
+  "singleQuote": true
 }
