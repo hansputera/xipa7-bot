@@ -6,6 +6,7 @@ import rimraf from 'rimraf';
 import type { Boom } from '@hapi/boom';
 
 import { createBot, ReturnedMakeWaSocket } from './bot';
+import { messageUpsertHandle } from './events/messageUpsert';
 
 /**
  * Launch bot func.
@@ -20,6 +21,10 @@ async function launch(bot?: ReturnedMakeWaSocket): Promise<void> {
   if (!bot) {
     bot = await createBot(auth.state);
   }
+
+  bot.ev.on('messages.upsert', ({ messages }) =>
+    messageUpsertHandle(bot!, messages),
+  );
 
   bot.ev.on('connection.update', async (connection) => {
     auth.saveCreds();
