@@ -399,6 +399,7 @@ __metadata:
     eslint: ^8.21.0
     eslint-config-google: ^0.14.0
     eslint-config-prettier: ^8.5.0
+    phin: ^3.6.1
     pino-pretty: ^8.1.0
     prettier: ^2.7.1
     qrcode: ^1.5.1
@@ -554,6 +555,13 @@ __metadata:
   version: 5.3.1
   resolution: "camelcase@npm:5.3.1"
   checksum: e6effce26b9404e3c0f301498184f243811c30dfe6d0b9051863bd8e4034d09c8c2923794f280d6827e5aa055f6c434115ff97864a16a963366fb35fd673024b
+  languageName: node
+  linkType: hard
+
+"centra@npm:^2.4.2":
+  version: 2.5.0
+  resolution: "centra@npm:2.5.0"
+  checksum: f3c66d372a886cd2311bc6b25a4ba4e354170928161bba0bc0995d9697e65b93bc7de115f85c4b8202f8d556f629434531ef2326ce36f222a4e6dde86e36fc75
   languageName: node
   linkType: hard
 
@@ -1566,6 +1574,15 @@ __metadata:
   version: 4.1.0
   resolution: "peek-readable@npm:4.1.0"
   checksum: 02c673f9bc816f8e4e74a054c097225ad38d457d745b775e2b96faf404a54473b2f62f5bcd496f5ebc28696708bcc5e95bed409856f4bef5ed62eae9b4ac0dab
+  languageName: node
+  linkType: hard
+
+"phin@npm:^3.6.1":
+  version: 3.6.1
+  resolution: "phin@npm:3.6.1"
+  dependencies:
+    centra: ^2.4.2
+  checksum: 17fbddfec9d6f1359460fa6f7f33db9e4d5380bda1bd2745e75810b92e53fd3c5713086c951683a8c8b6526aaa172b031b2858b1c66c3a120a06963ffe26136e
   languageName: node
   linkType: hard
 
