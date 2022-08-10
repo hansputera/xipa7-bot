@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "xipa7-bot",
+  "version": "1.0.0",
+  "description": "X IPA 7 WhatsApp Bot",
+  "main": "index.js",
+  "scripts": {
+    "lint": "turbo run lint --parallel",
+    "format": "turbo run format --parallel",
+    "clean": "turbo run clean --parallel",
+    "build": "turbo run build --parallel",
+    "start": "turbo run start",
+    "postinstall": "husky install"
+  },
+  "keywords": [
+    "whatsapp-bot",
+    "baileys",
+    "xipa7",
+    "whatsapp-bot-sekolah",
+    "whatsapp-school-bot"
+  ],
+  "author": {
+    "name": "Hanif Dwy Putra S",
+    "email": "hanifdwyputrasembiring@gmail.com"
+  },
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=16.x"
+  },
+  "maintainers": [
+    "hansputera"
+  ],
+  "repository": {
+    "url": "https://github.com/hansputera/xipa7-bot"
+  },
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "turbo": "^1.4.3"
+  },
+  "packageManager": "yarn@3.2.2",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ]
+}

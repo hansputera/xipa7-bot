@@ -1,0 +1,25 @@
+{
+  "name": "@xipa7-bot/bot",
+  "description": "Main X IPA 7 Bot Source Code",
+  "version": "1.0.0",
+  "scripts": {
+    "lint": "eslint \"**/*.{js,ts,d.ts}\" --fix",
+    "format": "prettier . --write",
+    "clean": "rimraf dist",
+    "build": "tsc -p tsconfig.json",
+    "start": "node ."
+  },
+  "main": "./dist/index.js",
+  "packageManager": "yarn@3.2.2",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
+    "@xipa7-bot/config": "*",
+    "eslint": "^8.21.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.7.4"
+  }
+}

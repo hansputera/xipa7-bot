@@ -1,0 +1,26 @@
+{
+    "$schema": "https://turborepo.org/schema.json",
+    "baseBranch": "origin/master",
+    "pipeline": {
+        "format": {
+            "cache": true,
+            "dependsOn": ["^lint"]
+        },
+        "lint": {
+            "cache": true,
+            "outputs": []
+        },
+        "build": {
+            "cache": true,
+            "dependsOn": ["^format"]
+        },
+        "clean": {
+            "cache": false,
+            "outputs": []
+        },
+        "start": {
+            "cache": false,
+            "outputs": []
+        }
+    }
+}
